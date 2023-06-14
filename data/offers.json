@@ -1,0 +1,124 @@
+{
+  "categories": [
+    {
+      "country": "Hiszpania",
+      "imagePath": "/images/spain.jpg",
+      "offers": [
+        {
+          "hotelName": "Hotel Paradise",
+          "stars": 4,
+          "startDate": "2023-07-15",
+          "basePrice": 1200,
+          "promoPrice": null,
+          "lastMinute": false,
+          "mealCategory": "All Inclusive"
+        },
+        {
+          "hotelName": "Sunset Resort",
+          "stars": 5,
+          "startDate": "2023-08-10",
+          "basePrice": 1500,
+          "promoPrice": 1299,
+          "lastMinute": true,
+          "mealCategory": "Full Board"
+        },
+        {
+          "hotelName": "Beachfront Hotel",
+          "stars": 3,
+          "startDate": "2023-09-05",
+          "basePrice": 900,
+          "promoPrice": null,
+          "lastMinute": false,
+          "mealCategory": "Half Board"
+        },
+        {
+          "hotelName": "Luxury Resort",
+          "stars": 5,
+          "startDate": "2023-10-20",
+          "basePrice": 1800,
+          "promoPrice": null,
+          "lastMinute": false,
+          "mealCategory": "All Inclusive"
+        },
+        {
+          "hotelName": "Seaside Hotel",
+          "stars": 4,
+          "startDate": "2023-11-15",
+          "basePrice": 1000,
+          "promoPrice": 899,
+          "lastMinute": true,
+          "mealCategory": "Full Board"
+        },
+        {
+          "hotelName": "Family Resort",
+          "stars": 3,
+          "startDate": "2023-12-01",
+          "basePrice": 800,
+          "promoPrice": null,
+          "lastMinute": false,
+          "mealCategory": "Half Board"
+        }
+      ]
+    },
+    {
+      "country": "Egipt",
+      "imagePath": "/images/egypt.jpg",
+      "offers": [
+        {
+          "hotelName": "Nile Palace",
+          "stars": 5,
+          "startDate": "2023-07-10",
+          "basePrice": 2000,
+          "promoPrice": 1699,
+          "lastMinute": false,
+          "mealCategory": "Full Board"
+        },
+        {
+          "hotelName": "Pyramids Resort",
+          "stars": 4,
+          "startDate": "2023-08-20",
+          "basePrice": 1500,
+          "promoPrice": null,
+          "lastMinute": true,
+          "mealCategory": "Half Board"
+        },
+        {
+          "hotelName": "Red Sea Retreat",
+          "stars": 3,
+          "startDate": "2023-09-05",
+          "basePrice": 1000,
+          "promoPrice": 899,
+          "lastMinute": false,
+          "mealCategory": "All Inclusive"
+        },
+        {
+          "hotelName": "Desert Oasis Hotel",
+          "stars": 4,
+          "startDate": "2023-10-15",
+          "basePrice": 1800,
+          "promoPrice": 1499,
+          "lastMinute": false,
+          "mealCategory": "Full Board"
+        },
+        {
+          "hotelName": "Sphinx Resort",
+          "stars": 5,
+          "startDate": "2023-11-15",
+          "basePrice": 1600,
+          "promoPrice": null,
+          "lastMinute": true,
+          "mealCategory": "All Inclusive"
+        },
+        {
+          "hotelName": "Coral Beach Hotel",
+          "stars": 4,
+          "startDate": "2023-12-01",
+          "basePrice": 1200,
+          "promoPrice": null,
+          "lastMinute": false,
+          "mealCategory": "Half Board"
+        }
+      ]
+    }
+  ]
+}
