@@ -2,7 +2,7 @@
   "categories": [
     {
       "country": "Hiszpania",
-      "imagePath": "/images/spain.jpg",
+      "imagePath": "/egypt.jpg",
       "offers": [
         {
           "hotelName": "Hotel Paradise",
@@ -62,7 +62,7 @@
     },
     {
       "country": "Egipt",
-      "imagePath": "/images/egypt.jpg",
+      "imagePath": "/egypt.jpg",
       "offers": [
         {
           "hotelName": "Nile Palace",
@@ -114,6 +114,66 @@
           "stars": 4,
           "startDate": "2023-12-01",
           "basePrice": 1200,
+          "promoPrice": null,
+          "lastMinute": false,
+          "mealCategory": "Half Board"
+        }
+      ]
+    },
+    {
+      "country": "Grecja",
+      "imagePath": "/egypt.jpg",
+      "offers": [
+        {
+          "hotelName": "Aegean Paradise",
+          "stars": 4,
+          "startDate": "2023-07-20",
+          "basePrice": 1300,
+          "promoPrice": null,
+          "lastMinute": false,
+          "mealCategory": "All Inclusive"
+        },
+        {
+          "hotelName": "Olympus Resort",
+          "stars": 5,
+          "startDate": "2023-08-15",
+          "basePrice": 1700,
+          "promoPrice": 1499,
+          "lastMinute": true,
+          "mealCategory": "Full Board"
+        },
+        {
+          "hotelName": "Island Retreat",
+          "stars": 3,
+          "startDate": "2023-09-10",
+          "basePrice": 950,
+          "promoPrice": null,
+          "lastMinute": false,
+          "mealCategory": "Half Board"
+        },
+        {
+          "hotelName": "Luxury Villa",
+          "stars": 5,
+          "startDate": "2023-10-25",
+          "basePrice": 2000,
+          "promoPrice": null,
+          "lastMinute": false,
+          "mealCategory": "All Inclusive"
+        },
+        {
+          "hotelName": "Coastal Resort",
+          "stars": 4,
+          "startDate": "2023-11-20",
+          "basePrice": 1100,
+          "promoPrice": 999,
+          "lastMinute": true,
+          "mealCategory": "Full Board"
+        },
+        {
+          "hotelName": "Family-friendly Hotel",
+          "stars": 3,
+          "startDate": "2023-12-05",
+          "basePrice": 850,
           "promoPrice": null,
           "lastMinute": false,
           "mealCategory": "Half Board"
