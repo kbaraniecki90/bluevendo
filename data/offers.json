@@ -2,10 +2,11 @@
   "categories": [
     {
       "country": "Hiszpania",
-      "imagePath": "/egypt.jpg",
+      "imagePath": "/hiszpania.jpg",
       "offers": [
         {
           "hotelName": "Hotel Paradise",
+          "path": "hotel-paradise",
           "stars": 4,
           "startDate": "2023-07-15",
           "basePrice": 1200,
@@ -15,6 +16,7 @@
         },
         {
           "hotelName": "Sunset Resort",
+          "path": "sunset-resort",
           "stars": 5,
           "startDate": "2023-08-10",
           "basePrice": 1500,
@@ -24,6 +26,7 @@
         },
         {
           "hotelName": "Beachfront Hotel",
+          "path": "beachfront-hotel",
           "stars": 3,
           "startDate": "2023-09-05",
           "basePrice": 900,
@@ -33,6 +36,7 @@
         },
         {
           "hotelName": "Luxury Resort",
+          "path": "luxury-resort",
           "stars": 5,
           "startDate": "2023-10-20",
           "basePrice": 1800,
@@ -42,6 +46,7 @@
         },
         {
           "hotelName": "Seaside Hotel",
+          "path": "seaside-hotel",
           "stars": 4,
           "startDate": "2023-11-15",
           "basePrice": 1000,
@@ -51,6 +56,7 @@
         },
         {
           "hotelName": "Family Resort",
+          "path": "family-resort",
           "stars": 3,
           "startDate": "2023-12-01",
           "basePrice": 800,
@@ -62,10 +68,11 @@
     },
     {
       "country": "Egipt",
-      "imagePath": "/egypt.jpg",
+      "imagePath": "/egipt.jpg",
       "offers": [
         {
           "hotelName": "Nile Palace",
+          "path": "nile-palace",
           "stars": 5,
           "startDate": "2023-07-10",
           "basePrice": 2000,
@@ -75,6 +82,7 @@
         },
         {
           "hotelName": "Pyramids Resort",
+          "path": "pyramids-resort",
           "stars": 4,
           "startDate": "2023-08-20",
           "basePrice": 1500,
@@ -84,6 +92,7 @@
         },
         {
           "hotelName": "Red Sea Retreat",
+          "path": "red-sea-retreat",
           "stars": 3,
           "startDate": "2023-09-05",
           "basePrice": 1000,
@@ -93,6 +102,7 @@
         },
         {
           "hotelName": "Desert Oasis Hotel",
+          "path": "desert-oasis-hotel",
           "stars": 4,
           "startDate": "2023-10-15",
           "basePrice": 1800,
@@ -102,6 +112,7 @@
         },
         {
           "hotelName": "Sphinx Resort",
+          "path": "sphinx-resort",
           "stars": 5,
           "startDate": "2023-11-15",
           "basePrice": 1600,
@@ -111,6 +122,7 @@
         },
         {
           "hotelName": "Coral Beach Hotel",
+          "path": "coral-beach-hotel",
           "stars": 4,
           "startDate": "2023-12-01",
           "basePrice": 1200,
@@ -122,10 +134,11 @@
     },
     {
       "country": "Grecja",
-      "imagePath": "/egypt.jpg",
+      "imagePath": "/grecja.jpg",
       "offers": [
         {
           "hotelName": "Aegean Paradise",
+          "path": "aegean-paradise",
           "stars": 4,
           "startDate": "2023-07-20",
           "basePrice": 1300,
@@ -135,6 +148,7 @@
         },
         {
           "hotelName": "Olympus Resort",
+          "path": "olympus-resort",
           "stars": 5,
           "startDate": "2023-08-15",
           "basePrice": 1700,
@@ -144,6 +158,7 @@
         },
         {
           "hotelName": "Island Retreat",
+          "path": "island-retreat",
           "stars": 3,
           "startDate": "2023-09-10",
           "basePrice": 950,
@@ -153,6 +168,7 @@
         },
         {
           "hotelName": "Luxury Villa",
+          "path": "luxury-villa",
           "stars": 5,
           "startDate": "2023-10-25",
           "basePrice": 2000,
@@ -162,6 +178,7 @@
         },
         {
           "hotelName": "Coastal Resort",
+          "path": "coastal-resort",
           "stars": 4,
           "startDate": "2023-11-20",
           "basePrice": 1100,
@@ -171,6 +188,7 @@
         },
         {
           "hotelName": "Family-friendly Hotel",
+          "path": "family-friendly-hotel",
           "stars": 3,
           "startDate": "2023-12-05",
           "basePrice": 850,

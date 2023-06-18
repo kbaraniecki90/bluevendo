@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 import Header from "../Header/Header";
 import StarRating from "../StarRating/StarRating";
@@ -7,13 +8,21 @@ import StarRating from "../StarRating/StarRating";
 const OfferCardConteiner = styled.div`
   background-color: #ffffff;
   padding: 18px;
+  transition: background-color 0.3s;
+  cursor: pointer;
 
-  &:nth-of-type(odd) {
+  &:nth-of-type(even) {
     background-color: #f3f4f6;
+  }
+
+  &:hover {
+    background-color: #c7e7f5;
   }
 `;
 
-const OfferCardHeader = styled.header``;
+const OfferCardHeader = styled.header`
+  font-weight: 700;
+`;
 const OfferCardWrap = styled.div`
   display: flex;
   justify-content: space-between;
@@ -28,10 +37,56 @@ const OfferCardLeftCol = styled.div`
 const OfferCardRightCol = styled.div`
   width: 40%;
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
 `;
 const OfferCardStarRating = styled.div`
   margin-top: 5px;
   margin-bottom: 15px;
+`;
+
+const OfferCardDate = styled.p`
+  opacity: 0.75;
+  font-weight: 700;
+  margin-bottom: 5px;
+`;
+
+const OfferLastMinute = styled.p`
+  color: #ff5353;
+  font-weight: 600;
+`;
+const OfferMealCategory = styled.p`
+  opacity: 0.5;
+  font-weight: 500;
+`;
+
+const OfferType = styled.div`
+  display: flex;
+  column-gap: 26px;
+  row-gap: 13px;
+  flex-wrap: nowrap;
+`;
+
+const OfferPrice = styled.p`
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #3e4958;
+  text-align: right;
+`;
+const OfferOldPrice = styled.p`
+  color: #ff5353;
+  text-decoration-line: line-through;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+  text-align: right;
+`;
+const OfferOldPerson = styled.p`
+  color: #3e4958;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.75;
 `;
 
 function formatDate(date) {
@@ -51,37 +106,48 @@ const OfferCard = ({
   promoPrice,
   lastMinute,
   mealCategory,
+  path,
 }) => {
   return (
     <OfferCardConteiner>
-      <OfferCardHeader>
-        <Header level={3}>{hotelName}</Header>
-      </OfferCardHeader>
+      <Link href={`/offers/${path}`}>
+        <OfferCardHeader>
+          <Header level={3}>{hotelName}</Header>
+        </OfferCardHeader>
 
-      <OfferCardWrap>
-        <OfferCardLeftCol>
-          {stars ? (
-            <OfferCardStarRating>
-              <StarRating rating={stars} />
-            </OfferCardStarRating>
-          ) : null}
+        <OfferCardWrap>
+          <OfferCardLeftCol>
+            {stars ? (
+              <OfferCardStarRating>
+                <StarRating rating={stars} />
+              </OfferCardStarRating>
+            ) : null}
 
-          {startDate ? (
-            <p>
-              <time>{formatDate(startDate)}</time>
-            </p>
-          ) : null}
+            {startDate ? (
+              <OfferCardDate>
+                <time>{formatDate(startDate)}</time>
+              </OfferCardDate>
+            ) : null}
 
-          {lastMinute ? <p>Last minute</p> : null}
-          {mealCategory ? <p>{mealCategory}</p> : null}
-        </OfferCardLeftCol>
+            <OfferType>
+              {lastMinute ? (
+                <OfferLastMinute>Last minute</OfferLastMinute>
+              ) : null}
+              {mealCategory ? <p>{mealCategory}</p> : null}
+            </OfferType>
+          </OfferCardLeftCol>
 
-        <OfferCardRightCol>
-          {basePrice ? <p>{basePrice}</p> : null}
-          {promoPrice ? <p>{promoPrice}</p> : null}
-          <p>per person</p>
-        </OfferCardRightCol>
-      </OfferCardWrap>
+          <OfferCardRightCol>
+            {promoPrice ? <OfferOldPrice>{basePrice} pln</OfferOldPrice> : null}
+
+            {basePrice ? (
+              <OfferPrice>{promoPrice ? promoPrice : basePrice} pln</OfferPrice>
+            ) : null}
+
+            <OfferOldPerson>per person</OfferOldPerson>
+          </OfferCardRightCol>
+        </OfferCardWrap>
+      </Link>
     </OfferCardConteiner>
   );
 };
